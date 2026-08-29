@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Shampoo — Your Hair Has a Vibe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo"><div class="bars"><span></span><span></span><span></span></div>Spotify <span style="color:var(--mint)">Shampoo</span></div>
+    <nav class="navlinks">
+      <a href="#shop">Shop</a>
+      <a href="#quiz">Find Your Vibe</a>
+      <a href="#playlists">Playlists</a>
+    </nav>
+    <button class="cart-btn" onclick="openCart()">🛒 Cart <span class="cart-count" id="cartCount">0</span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">● NOW STREAMING IN THE SHOWER</div>
+      <h1>YOUR HAIR HAS<br>A <span class="accent">VIBE.</span><br>WE HAVE A<br>SHAMPOO<br>FOR IT.</h1>
+      <p class="sub">Five formulas, five genres. Take the 60-second quiz, meet your hair's music personality, and unwrap your very own Hair Wrapped.</p>
+      <div class="hero-cta">
+        <a href="#quiz" class="btn btn-primary">🎧 Find Your Hair Vibe</a>
+        <a href="#shop" class="btn btn-ghost">Browse the Collection</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="disc"><div class="disc-inner"><span></span><span></span><span></span><span></span><span></span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<!-- SHOP -->
+<section id="shop">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-tag">The Collection</div>
+      <h2>Five Bottles. Five Genres.</h2>
+    </div>
+    <div class="grid" id="productGrid"></div>
+    <div class="bundle-card reveal">
+      <div>
+        <h4>🎧 The Pop Bundle</h4>
+        <p>Shampoo + Conditioner + Hair Mask — the deluxe edition, for main-character hair every day.</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <span class="price">$45</span>
+        <button class="add-btn" style="background:var(--pop)" onclick="addToCart({id:'bundle',name:'The Pop Bundle',price:45,accent:'var(--pop)'})">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+  <div class="wrap">
+    <div class="section-head reveal" style="text-align:center;">
+      <div class="section-tag">60-Second Quiz</div>
+      <h2>Find Your Hair Vibe 🎧</h2>
+    </div>
+    <div class="quiz-shell reveal">
+      <div class="quiz-progress" id="quizProgress"></div>
+      <div id="quizBody"></div>
+      <div class="quiz-nav">
+        <button class="btn btn-ghost" id="backBtn" onclick="quizBack()">Back</button>
+        <button class="btn btn-primary" id="nextBtn" onclick="quizNext()" disabled>Next</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WRAPPED -->
+<section id="wrapped-section">
+  <div class="wrap">
+    <div class="wrapped-shell reveal" id="wrappedShell">
+      <div class="wrapped-year">YOUR 2026 HAIR WRAPPED</div>
+      <h2 id="wVibeTitle">—</h2>
+      <div class="wrapped-stats">
+        <div class="w-stat"><div class="w-label">🧴 Your Shampoo</div><div class="w-value" id="wShampoo">—</div></div>
+        <div class="w-stat"><div class="w-label">✨ Top Concern</div><div class="w-value" id="wConcern">—</div></div>
+        <div class="w-stat"><div class="w-label">🎵 Hair Anthem</div><div class="w-value" id="wAnthem">—</div></div>
+        <div class="w-stat"><div class="w-label">🫧 Wash Personality</div><div class="w-value" id="wWash">—</div></div>
+      </div>
+      <div class="wrapped-pct">
+        <div class="pct-bar"><div class="pct-fill" id="pctFill"></div></div>
+        <div class="pct-label" id="pctLabel">— hair personality match</div>
+      </div>
+      <div class="wrapped-cta">
+        <button class="btn btn-primary" id="wrappedAddBtn">Add My Shampoo to Cart</button>
+        <a href="#playlists" class="btn btn-ghost" onclick="selectPlaylistFromWrapped()">Hear the Playlist</a>
+        <button class="btn btn-ghost" onclick="retakeQuiz()">Retake Quiz</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAYLISTS -->
+<section id="playlists">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-tag">Shampoo Playlists</div>
+      <h2>Press Play On Your Wash Day</h2>
+      <p style="color:var(--text-dim); font-size:14px; margin-top:10px; max-width:520px;">Real songs, streamed straight from Spotify — hit play on any track below.</p>
+    </div>
+    <div class="playlist-tabs" id="plTabs"></div>
+    <div id="plPanels"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>
+      <div class="foot-tag">Spotify <span style="color:var(--mint)">Shampoo</span></div>
+      <p class="foot-note" style="margin-top:10px;">A fictional concept collaboration created for a web design competition. Not affiliated with or endorsed by Spotify AB.</p>
+    </div>
+    <p class="foot-note">“Your hair has a vibe. We have a shampoo for it.” 🎧🧴</p>
+  </div>
+</footer>
+
+<!-- cart drawer -->
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>Your Cart</h3>
+    <button class="close-x" onclick="closeCart()">✕</button>
+  </div>
+  <div id="cartItems"></div>
+  <div class="cart-total" id="cartTotal" style="display:none;"><span>Total</span><span id="cartTotalVal">$0</span></div>
+  <button class="btn btn-primary checkout-btn" id="checkoutBtn" style="display:none;" onclick="showToast('This is a concept prototype — no real checkout yet 🎧')">Checkout</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
