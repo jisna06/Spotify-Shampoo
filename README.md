@@ -1,6 +1,6 @@
 # Spotify Shampoo — Your Hair Has a Vibe
 
-**Your hair has a vibe. We have a shampoo for it.**
+**Your hair has a vibe. We have a shampoo for it.** 
 
 Spotify Shampoo is a creative web-design concept that combines music personality with personalized hair care. Users can explore shampoo formulas inspired by different music genres, take an interactive quiz, discover their unique Hair Wrapped result, and listen to curated Spotify playlists.
 
