@@ -1,12 +1,12 @@
-# 🎧 Spotify Shampoo — Your Hair Has a Vibe
+# Spotify Shampoo — Your Hair Has a Vibe
 
-> **Your hair has a vibe. We have a shampoo for it. 🧴🎵**
+**Your hair has a vibe. We have a shampoo for it.**
 
-Spotify Shampoo is a creative web-design concept that combines **music personality with personalized hair care**. Users can explore shampoo formulas inspired by different music genres, take an interactive quiz, discover their unique **Hair Wrapped** result, and listen to curated Spotify playlists.
+Spotify Shampoo is a creative web-design concept that combines music personality with personalized hair care. Users can explore shampoo formulas inspired by different music genres, take an interactive quiz, discover their unique Hair Wrapped result, and listen to curated Spotify playlists.
 
-## ✨ Features
+## Features
 
-* 🎧 **5 Music-Inspired Shampoo Formulas**
+* 5 music-inspired shampoo formulas
 
   * Pop & Shine
   * Rock & Repair
@@ -14,67 +14,50 @@ Spotify Shampoo is a creative web-design concept that combines **music personali
   * Lo-fi & Calm
   * EDM & Refresh
 
-* 🧠 **Hair Vibe Quiz**
+* Interactive Hair Vibe Quiz
 
-  * Answer 5 questions to discover your hair personality.
+* Personalized Hair Wrapped result
 
-* 🎁 **Hair Wrapped**
+* Spotify playlists for each shampoo genre
 
-  * Get a personalized shampoo recommendation.
-  * See your top hair concern, hair anthem, wash personality, and vibe match percentage.
+* Shopping cart
 
-* 🎵 **Spotify Playlists**
+* Smooth animations and responsive design
 
-  * Each shampoo genre has its own curated playlist with Spotify tracks.
+## Built With
 
-* 🛒 **Shopping Cart**
+* HTML5
+* CSS3
+* JavaScript
+* Spotify Embeds
 
-  * Add shampoos and bundles to your cart.
-  * View the total and remove products.
+## Live Demo
 
-* ✨ **Interactive Design**
+https://jisna06.github.io/Spotify-Shampoo/
 
-  * Animated visuals
-  * Smooth scrolling
-  * Hover effects
-  * Responsive layout for different screen sizes
-
-## 🛠️ Built With
-
-* **HTML5** — Website structure
-* **CSS3** — Styling, animations and responsive design
-* **JavaScript** — Quiz, cart, playlists and interactions
-* **Spotify Embeds** — Music playback
-
-## 🌐 Live Demo
-
-**[Launch Spotify Shampoo](https://jisna06.github.io/Spotify-Shampoo/)**
-
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Spotify-Shampoo/
 │
-├── index.html      # Main webpage
-├── style.css       # Website styling
-├── script.js       # Interactive functionality
-└── README.md       # Project documentation
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 ```
 
-## 🎯 Project Concept
+## Project Concept
 
 The idea is to make hair care feel as personal and engaging as discovering music.
 
-Instead of simply asking **"What type of shampoo do you need?"**, Spotify Shampoo asks:
+Instead of simply asking "What type of shampoo do you need?", Spotify Shampoo asks:
 
-> **"What's your hair's vibe?" 🎧**
+> "What's your hair's vibe?"
 
 Your music personality becomes your hair-care personality.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
-Spotify Shampoo is a **fictional concept created for a web design competition**. It is not affiliated with, sponsored by, or endorsed by Spotify AB.
-
----
+Spotify Shampoo is a fictional concept created for a web design competition. It is not affiliated with, sponsored by, or endorsed by Spotify AB.
 
 **🎧 Your hair has a vibe. We have a shampoo for it. 🧴**
